@@ -1,0 +1,667 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style> 
+.header
+{
+     background-color:black;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color:#EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: black;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: black;
+}
+.bar.back::before{
+  background-color:BLACK;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+ width:200px;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:200px;
+  width:200px;
+
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.education
+{
+  background-color:lightgrey;
+}
+
+
+.mySlides {display:none;}
+
+.Projects
+{
+ background-color:lightgrey;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.HelpingHands
+{
+background-color:lightgrey;}
+}
+
+.dd
+{
+background-color:lightgrey;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<table>
+<tr>
+<td style="color:white;"><font size="5">Sakshi Naik</font></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">About</td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">Skills</td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">Resume</td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">Project</td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">HelpingHand</td><td></td><td></td><td></td><td></td>
+<td style="color:white;"><font size="5">Contact</td>
+
+
+
+</tr>
+</table></div>
+
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Sakshi Kiran Naik</h1>
+    <p>And I'm a Computer Engineer</p>
+ 
+  </div>
+</div>
+
+
+<center>
+<h1><b><u>My Skill Sets</u></b><h1>
+</center>
+
+
+  <div class="container">
+    
+    <div class="bar learning" data-skill="Python"></div><br>
+    <div class="bar back basic" data-skill="SQL "></div><br>
+    <div class="bar back intermediate" data-skill="Java"></div><br>
+ 
+    <div class="bar front advanced" data-skill="C"></div><br>
+    <div class="bar front expert" data-skill="UI/UX"></div><br>
+
+  </div>
+
+
+
+
+
+<div class="education">
+
+
+<center>
+<h1><b><u>Timeline</u></b><h1>
+</center>
+<center>
+<table>
+<tr>
+<td>
+<div class="container">
+  <img src="stevens.png" alt="Avatar" class="image" height="200">
+  <div class="overlay">
+    <div class="text">Masters in Computer Science</div>
+  </div>
+</div>
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<b>Master in Computer Science, Stevens Insitute of Technology<b><br>New Jersey, USA</td>
+</tr>
+</table>
+
+
+
+
+<br>
+
+<table>
+<tr>
+<td>
+<div class="container">
+  <img src="mu.jpg" alt="Avatar" class="image" height="200">
+  <div class="overlay">
+    <div class="text">Masters in Computer Science</div>
+  </div>
+</div>
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<b>Bachelor of Engineering,Information Tech,Mumbai University<b><br>Cgpa:7.76<br>2015-2019</td>
+</tr>
+</table>
+
+<br>
+
+
+
+<table>
+<tr>
+<td>
+<div class="container">
+  <img src="kj.png" alt="Avatar" class="image" height="200">
+  <div class="overlay">
+    <div class="text">Major Computer Science</div>
+  </div>
+</div>
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<b>Majored in Computer Science(BiFocal),K.J.Somaiya College<b><br>Cgpa:88%<br>2013-2015</td>
+</tr>
+</table>
+<br>
+</div>
+<div class="Resume">
+
+
+<center>
+<h1><b><u>Resume</u></b><h1>
+
+<em><b><h2 style="color:DarkGreen;"><font size="5">Please Click the Resume for better viewing purposes</h2></b></em>
+<br>
+<a href="C:\Users\Administrator\Desktop\sak\img.png" download>
+  <img src="img.png" alt="W3Schools" height="600">
+</a>
+
+</div>
+
+
+<div class= "Projects">
+
+
+
+<center>
+<h1><b><u>Projects</u></b><h1>
+</center>
+<center>
+<h2>College Analytics</h2>
+
+
+<div class="w3-content w3-section" style="max-width:700px">
+  <img class="mySlides" src="img1.png" style="width:100%">
+  <img class="mySlides" src="img2.png" style="width:100%">
+  <img class="mySlides" src="img3.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<p>College Analytics <br>
+Datta Meghe College Of Engineering<br>
+Project Leader : Sakshi Naik<br>
+Project Members : Prachi Thale & Akanksha Mishra<BR></b><br><center>
+<i style="color:White;">This Project, compared the profile of the student against an extensive database, of information from all colleges. After extensive pattern based matching and analysis , The software gave realistic chances of admit to particular universities based on the submitted profile.</i>
+
+
+
+</p>
+
+<br><br>
+<b><hr></b>
+<h2>Cloning Amazon</h2>
+
+
+<center>
+<img src="im4.png" width="700">
+
+
+<p>
+Cloning Amazon <br>
+Datta Meghe College Of Engineering<br>
+Project Leader : Sakshi Naik<br>
+Project Members : Akanksha Mishra<BR></b><br>
+<i style="color:white;"><font size="5">In this project we tried to clone Amazon at avery basi level for our college. We included downloading Ebooks (some free/some paid) as well as also took orders for delivery. For payment purposes an API was used as gateway and two steep verification(email id and one time password sent to mobile) was required. For maintaing the order recipets, we had built an extensive database which kept a track of all the orders and payments.</i>
+</p>
+<br><br></div>
+
+<br>
+
+
+<div class= "Certifications">
+
+
+
+<center>
+<h1><b><u>Certifications</u></b><h1>
+</center>
+
+<table>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+
+<div class="card">
+
+ 
+  <h1>JAVA</h1>
+  <p class="title"></p>
+  <p>DUke University</p>
+<p>98.3%</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+
+
+  <p><button>2018 Dec</button></p></div>
+
+
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<div class="card">
+
+ <h1>Python</h1>
+  <p class="title"></p>
+  <p>IIT Bombay</p>
+<p>A+ </p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+ 
+
+  <p><button>2019 Jan</button></p></div>
+</td>
+
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
+<td>
+<div class="card">
+
+ <h1>&nbspUI/UX&nbsp</h1>
+  <p class="title"></p>
+  <p>Stony Brook</p>
+<p>96%</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+ 
+
+  <p><button>2019 Feb</button></p></div>
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
+<td>
+<div class="card">
+
+ <h1>Cloud</h1>
+  <p class="title"></p>
+  <p>Mumbai University</p>
+<p>93%</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+ 
+
+  <p><button>2019 Feb</button></p></div>
+
+</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
+<td>
+<div class="card">
+
+ <h1>HTML5</h1>
+  <p class="title"></p>
+  <p>Michigan University</p>
+<p>95%</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+ 
+
+  <p><button>2018 Nov</button></p></div>
+
+</td>
+</tr></table>
+
+</div>
+
+<br><br>
+
+<div class= "HelpingHands">
+
+
+
+<center>
+<h1><b><u>HelpingHands</u></b></h1>
+
+<p>Feed a Man a fish, and you have helped him for a day. Teach a Man to fish, you have helped him forever.</p>
+<p>Children are the most important resource of our world, if we want to make this world a better place, children and their education should be our priority. For this very purpose, I have been volunteering at a few NGO's. This section is merely so that these NGO'S recieve better publicity and can attract more volunteers. </p>
+
+</div>
+
+<div class="Ngo">
+<table>
+
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<img src="ang.jpg">
+</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td> <b>Angel Express Foundation Tutours Children from age groups 5-15,for free. They provide Books, Slates and pens for children. I vounteered here for a few weeks and taught children of ages 5-10. </b>
+
+</tr>
+
+</table>
+
+
+
+
+<table>
+
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<br>
+<td>
+<img src="lawa.jpg" height="200" width="220">
+</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td> <b>I have volunteered for Blind Law Students,as a writer. This NGO enables blind students to pursue a career in law, and also sends a message that differently abled people, too have equal rights to education. </b>
+
+</tr>
+
+</table>
+
+
+<table>
+
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<br>
+<td>
+<img src="math.jpg" height="200" width="220">
+</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td> <b>I have voulunteered with "Each One,Teach One" Initiave. Although it never formulated as a official body, some students of Engineering taught children of std 10th and 12th, Mathamatics and Science. </b>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+<div class="contact">
+
+<center>
+<h1><b><u>Contact</u></b></h1>
+
+<table>
+<tr>
+
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+
+<td> Address <br>
+Stevens Institute Of Technology<br>
+Castle Point on Hudson<br>
+Hoboken, NJ-07030-5799<br>
+USA
+</td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+
+
+<td>Phone<br>
+9833290292
+</td>
+
+
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+<td></td><td></td>
+
+<td>Email<br>
+snaik9@stevens.edu</td>
+
+</tr>
+</table>
+
+</div>
+
+</div>
+<hr>
+<br>
+<div class="dd">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src="skn.png" height="60">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+Designed By :<b> SAKSHI KIRAN NAIK</b>
+
+</div>
